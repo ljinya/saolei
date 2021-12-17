@@ -5,26 +5,31 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
 </head>
 
-<body>              <!--总共含有4块-->
-  <div id="mine">
-    <div class="level">   <!--定义一个水平的类-->
-      <button class="active"><b>简单模式</b></button>    <!--定义三个模式的按钮，为了美观加粗体文本-->
-      <button ><b>中级模式</b></button>
-      <button ><b>高级模式</b></button>
-      <button ><b>重新开始</b></button>
-    </div>
+<body style="background-image: linear-gradient(to bottom right, rgb(41, 174, 197),  rgb(160, 184, 53));">
   
-    <div class="game-pane">  <!--游戏网页-->
+  <div class="level">  
+    <button id="easy"><b style="font-size: 30px;">简单模式</b></button>    <!--定义三个模式的按钮，为了美观加粗体文本-->
+    <button id="normal"><b style="font-size: 30px;">中级模式</b></button>
+    <button id="difficult"><b style="font-size: 30px;">高级模式</b></button>
+    <button id="restart"><b style="font-size: 30px;">重新开始</b></button>
+  </div>
+  
+  <div id="mine">
+    <div class="game-pane">  
       <table id="board"> <!--棋盘-->
       </table>
-    </div>
-
-    <div class="info">
-      <b>所剩雷数:<span class ="mineNum"></span></b>
-      <br>                                                     <!--换行-->
-      <b>剩余秒数:<span class ="mineNum"></span></b>
-    </div>
   </div>
+  </div>
+  
+  <div class="info">
+    <b style="font-size: 30px;">所剩雷数:<span class ="mineNum"></span></b>
+    <br>                                                     <!--换行-->
+    <b style="font-size: 30px;">剩余秒数:<span class ="mineNum"></span></b>
+    <br>
+    <b style="font-size: 30px;"><span class ="tips">提示:左键扫雷，右键插旗，再次右键拔旗</span></b>
+  </div>
+  
+
   <script src="script.js"></script>
 </body>
 </html>
